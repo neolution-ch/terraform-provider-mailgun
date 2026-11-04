@@ -1,6 +1,17 @@
 Terraform Provider
 ==================
 
+> **This is Neolution's fork of [wgebis/terraform-provider-mailgun](https://github.com/wgebis/terraform-provider-mailgun),**
+> published as [`neolution-ch/mailgun`](https://registry.terraform.io/providers/neolution-ch/mailgun/).
+> It carries upstream pull requests that are not released yet:
+>
+> - [#82](https://github.com/wgebis/terraform-provider-mailgun/pull/82): a transient API error while polling a delete no longer counts as a successful deletion
+> - [#83](https://github.com/wgebis/terraform-provider-mailgun/pull/83): mailgun-go v5.19.3, so `mailgun_route` reads no longer fail on RFC3339 timestamps
+> - [#85](https://github.com/wgebis/terraform-provider-mailgun/pull/85): write-only `password_wo` / `password_wo_version` on `mailgun_domain_credential`
+>
+> Changes are made upstream first. Once upstream releases all of them, switch back to `wgebis/mailgun`.
+> Fork versions start at 0.11.0 and do not track upstream version numbers.
+
 - Website: https://registry.terraform.io/providers/wgebis/mailgun/
 - [![Gitter chat](https://badges.gitter.im/hashicorp-terraform/Lobby.png)](https://gitter.im/hashicorp-terraform/Lobby)
 - Mailing list: [Google Groups](http://groups.google.com/group/terraform-tool)
